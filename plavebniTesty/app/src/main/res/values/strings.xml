@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">plavebniTesty</string>
+    
+    
+    <string name="prihlasovaci_obrazovka_uvod">Vítám Vás v aplikaci Plavební testy.\n\nMůžete se zde bezplatně připravit na zkoušky pro všehny druhy plavidel.</string>
+    <string name="prihlasovaci_obrazovka_nazev">Dobrý den</string>
+    <string name="prihlasovaci_obrazovka_prohlaseni">Aplikace je bezplatná a neodesílá žádná data mimo mobil. Tento projekt je čistě koníčkem, kdyby Vám proto něco chybělo nebo byste měli nějaký nápad či problém, neváhejte mě prosím kontaktovat.</string>
+    
+    <string name="jmeno">Jméno</string>
+    <string name="prijmeni">Příjmení</string>
+    <string name="tlacitko_dale">Dále</string>
 </resources>

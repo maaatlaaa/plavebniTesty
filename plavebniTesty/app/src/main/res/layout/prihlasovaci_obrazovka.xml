@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:text="@string/prihlasovaci_obrazovka_nazev"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="46sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="@string/prihlasovaci_obrazovka_uvod"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/prihlasovaci_obrazovka_jmeno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:autofillHints="no"
+        android:hint="@string/jmeno"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#263238"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/prihlasovaci_obrazovka_prijmeni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:autofillHints="no"
+        android:hint="@string/prijmeni"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#212121"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/prihlasovaci_obrazovka_tlacitko"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:background="#000000FF"
+        android:text="@string/tlacitko_dale"/>
+
+    <TextView
+        android:id="@+id/prihlasovaci_obrazovka_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="@string/prihlasovaci_obrazovka_prohlaseni"/>
+
+</LinearLayout>
