@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/black"
+    android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
     <include layout="@layout/navigacni_lista"/>
@@ -18,31 +18,33 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/vychozi_tapeta"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/uzivatelska_tapeta"/>
 
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/profile_picture"
             android:layout_gravity="center"
-            app:shapeAppearanceOverlay="@style/Circular" />
+            android:src="@drawable/profile_picture"
+            app:shapeAppearanceOverlay="@style/Circular"/>
 
     </FrameLayout>
+
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingHorizontal="20dp"
-        android:background="@drawable/gradient_backgound">
+        android:paddingHorizontal="20dp">
 
         <TableRow>
 
             <TextView
+                android:id="@+id/jmeno_prijmeni_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingVertical="20dp"
-                android:text="Jmeno Prijmeni"
+                android:text=""
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textColor="@color/white"/>
@@ -55,9 +57,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:textColor="@color/white"
-                android:text="Úspěšnost v testech:"/>
+                android:text="@string/text_uspesnost" />
 
             <TextView
+                android:id="@+id/pocet_uspesnost_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -72,25 +75,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:textColor="@color/white"
-                android:text="Počet vyplněných testů:"/>
+                android:text="@string/text_pochopeno" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="" />
-        </TableRow>
-
-        <TableRow
-            android:paddingVertical="13dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:textColor="@color/white"
-                android:text="Počet otázek v kategorii Pochopeno:" />
-
-            <TextView
+                android:id="@+id/pocet_pochopeno_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -105,9 +93,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:textColor="@color/white"
-                android:text="Počet otázek v kategorii Nejistý:" />
+                android:text="@string/text_nejisty" />
 
             <TextView
+                android:id="@+id/pocet_nejisty_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -122,9 +111,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:textColor="@color/white"
-                android:text="Počet otázek v kategorii Problematické:" />
+                android:text="@string/text_problematicky" />
 
             <TextView
+                android:id="@+id/pocet_problematicke"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -139,22 +129,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:textColor="@color/white"
-                android:text="Počet otázek v kategorii Nezařazeno:" />
+                android:text="@string/text_nezarazeno" />
 
             <TextView
+                android:id="@+id/pocet_nezarazeno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="@color/white"
                 android:text="" />
         </TableRow>
-
-
 
     </TableLayout>
-
-
-
-
 
 </LinearLayout>
