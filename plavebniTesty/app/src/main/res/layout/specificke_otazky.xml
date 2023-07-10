@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <include layout="@layout/navigacni_lista" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/otazka_cislo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/stopky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/zadani"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text=""
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/odpoved_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zaoblene_tlacitko"
+        android:padding="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:text="@string/odpoved_a"/>
+
+    <Button
+        android:id="@+id/odpoved_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zaoblene_tlacitko"
+        android:padding="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:text="@string/odpoved_b"/>
+
+    <Button
+        android:id="@+id/odpoved_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zaoblene_tlacitko"
+        android:padding="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:text="@string/odpoved_c"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pochopeno_icon"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="5dp"
+            android:padding="15dp"
+            android:background="#"
+            android:contentDescription="@string/pridat_kategorie_pochopene"/>
+
+        <ImageButton
+            android:id="@+id/imageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/nejisty_icon"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="5dp"
+            android:padding="15dp"
+            android:background="#"
+            android:contentDescription="@string/pridat_kategorie_nejiste"/>
+
+        <ImageButton
+            android:id="@+id/imageView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/problematicke_icon"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="5dp"
+            android:padding="15dp"
+            android:background="#"
+            android:contentDescription="@string/pridat_kategorie_problematicke"/>
+
+        <ImageButton
+            android:id="@+id/imageView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dalsi_icon"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="5dp"
+            android:padding="15dp"
+            android:background="#"
+            android:contentDescription="@string/pridat_kategorie_dalsi"/>
+    </LinearLayout>
+</LinearLayout>

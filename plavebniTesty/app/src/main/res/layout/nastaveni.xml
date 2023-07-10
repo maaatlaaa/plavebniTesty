@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <include layout="@layout/navigacni_lista"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:text="@string/nastaveni" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp">
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/nastaveni_uvodni_fotky_tlacitko1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:hint="@string/jmeno"
+                android:inputType="text"
+                android:layout_weight="3"
+                android:textColor="@color/white"
+                android:textColorHint="#263238"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/nastaveni_uvodni_fotky_tlacitko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#000000FF"
+                android:text="@string/tlacitko_dale"
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/nastaveni_uvodni_fotky_tlacitko2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:hint="@string/prijmeni"
+                android:inputType="text"
+                android:layout_weight="3"
+                android:textColor="@color/white"
+                android:textColorHint="#263238"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/nastaveni_uvodni_fotky_tlacitko3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="#000000FF"
+                android:text="@string/tlacitko_dale"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/nastaveni_jmeno_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:hint="@string/nastaveni_uvodni_foto"
+                android:inputType="text"
+                android:layout_weight="3"
+                android:textColor="@color/white"
+                android:textColorHint="#263238"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/nastaveni_jmeno_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="#000000FF"
+                android:text="@string/tlacitko_dale"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/nastaveni_prijmeni_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:hint="@string/nastaveni_profil_foto"
+                android:inputType="text"
+                android:layout_weight="3"
+                android:textColor="@color/white"
+                android:textColorHint="#263238"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/nastaveni_prijmeni_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="#000000FF"
+                android:text="@string/tlacitko_dale"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp">
+
+        <ImageButton
+            android:id="@+id/svetle_modre_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_background"
+            app:srcCompat="@drawable/check_icon"
+            android:contentDescription="@string/svetle_modre_theme"/>
+
+        <ImageButton
+            android:id="@+id/tmave_modre_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_background_tmave"
+            app:srcCompat="@drawable/check_icon"
+            android:contentDescription="@string/tmave_modre_theme"/>
+
+        <ImageButton
+            android:id="@+id/zluto_cervena_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_background_zluto_cervene"
+            app:srcCompat="@drawable/check_icon"
+            android:contentDescription="@string/zluto_cervene_theme"/>
+
+        <ImageButton
+            android:id="@+id/bilo_cerna_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_background_bilo_cerne"
+            app:srcCompat="@drawable/check_icon"
+            android:contentDescription="@string/bilo_cerne_theme"/>
+    </LinearLayout>
+</LinearLayout>

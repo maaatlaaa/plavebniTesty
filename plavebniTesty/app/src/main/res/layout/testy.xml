@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <include layout="@layout/navigacni_lista" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:text="@string/testy"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <Button
+                android:id="@+id/test_vudce_maleho_plavidla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:layout_marginVertical="10dp"
+                android:padding="20dp"
+                android:textSize="23sp"
+                android:background="@drawable/zaoblene_tlacitko"
+                android:text="@string/vudce_maleho_plavidla"
+                android:textColor="@color/black"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/test_vudce_plavidla_cr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:layout_marginVertical="10dp"
+                android:textSize="23sp"
+                android:padding="20dp"
+                android:background="@drawable/zaoblene_tlacitko"
+                android:text="@string/vudce_plavidla_cr"
+                android:textColor="@color/black"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/test_kormidelnik_cr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:layout_marginVertical="10dp"
+                android:textSize="23sp"
+                android:padding="20dp"
+                android:background="@drawable/zaoblene_tlacitko"
+                android:text="@string/kormidelnik_cr"
+                android:textColor="@color/black"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/test_kvalifikovany_lodnik_cr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:layout_marginVertical="10dp"
+                android:textSize="23sp"
+                android:padding="20dp"
+                android:background="@drawable/zaoblene_tlacitko"
+                android:text="@string/kvalifikovany_lodnik_cr"
+                android:textColor="@color/black"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/test_lodnik_cr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="320dp"
+                android:layout_marginVertical="10dp"
+                android:textSize="23sp"
+                android:padding="20dp"
+                android:background="@drawable/zaoblene_tlacitko"
+                android:text="@string/lodnik_cr"
+                android:textColor="@color/black"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
